@@ -1,0 +1,21 @@
+{
+  "name": "pedidos",
+  "version": "1.0.0",
+  "description": "Proyecto de landing page para una app de pedidos de comida",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pedidos",
+    "HTML",
+    "SASS",
+    "GULP",
+    "BEM"
+  ],
+  "author": "Gonzalo Baldassi",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
