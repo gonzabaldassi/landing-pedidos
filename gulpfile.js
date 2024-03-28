@@ -1,0 +1,9 @@
+const {src, dest, watch, series} = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
+const cssnano = require('cssnano');
+const sourcemaps = require('gulp-sourcemaps');
+const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
+const avif = require('gulp-avif');
