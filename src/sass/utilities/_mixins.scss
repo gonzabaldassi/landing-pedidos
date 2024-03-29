@@ -1,5 +1,6 @@
 @use 'vars' as v;
 
+//Definicion de mixins para los media queries
 @mixin tel{
     @media (min-width: v.$tel) {
         @content;
@@ -18,6 +19,7 @@
     }
 }
 
+//mixin para los botones
 @mixin btn($color, $text) {
     background-color: $color;
     font-size: 2rem;
