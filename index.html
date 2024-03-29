@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,5 +27,29 @@
         </nav><!-- .header__navbar -->
     </header><!-- .header -->
 
+    <section class="form container">
+        <div class="form__grid">
+            <div class="form__img">
+                <img src="./build/img/dibujo_repartidor.svg" alt="Imagen del repartidor para el contacto">
+            </div>
+
+            <div class="form__content">
+                <h2 class="form__title">Encuentra y Pide comida de tu restaurante favorito</h2>
+                <form action="" class="form__items">
+                    <div class="form__item">
+                        <label class="form__label" for="restaurant">Restaurant</label>
+                        <input class="form__input" type="text" name="restaurant" id="restaurant" placeholder="Grecco Villa María">
+                    </div>
+
+                    <div class="form__item">
+                        <label class="form__label" for="plato">Plato</label>
+                        <input class="form__input" type="text" name="plato" id="plato" placeholder="Pizza, ensalada, hamburguesa">
+                    </div>
+
+                    <input type="button" value="Buscar" class="form__submit">
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
