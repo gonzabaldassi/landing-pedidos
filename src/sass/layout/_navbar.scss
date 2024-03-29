@@ -27,15 +27,7 @@
             display: block;
 
             &--mod{
-                background-color: v.$primaryColor;
-                color: v.$white;
-                padding: 1rem 3rem;
-                border-radius: 1rem;
-                transition: background-color .3s ease;
-
-                &:hover{
-                    background-color: #e22331;
-                }
+                @include m.btn(v.$primaryColor, v.$white);
             }
         }
     }

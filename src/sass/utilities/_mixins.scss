@@ -18,7 +18,7 @@
     }
 }
 
-@mixin boton($color, $text) {
+@mixin btn($color, $text) {
     background-color: $color;
     font-size: 2rem;
     padding: 1.2rem 3rem;
@@ -34,7 +34,7 @@
 
     &:hover {
         cursor: pointer;
-        background-color: darken($text, 10);
+        background-color: darken($color, 10);
     }
 
     @include tablet {
