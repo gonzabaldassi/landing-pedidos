@@ -1,0 +1,31 @@
+@use '../utilities/vars' as v;
+@use '../utilities/mixins' as m;
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    
+
+    @include m.tablet{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        width: 30rem;
+        margin-bottom: v.$distance;
+
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &__navbar{
+        width: 100%;
+        @include m.tablet {
+            width: auto;
+        }
+    }
+}
