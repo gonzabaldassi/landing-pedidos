@@ -65,3 +65,46 @@
         }
     }
 }
+
+.functioning{
+    margin-top: v.$distance;
+
+    &__wave{
+        margin-bottom: -1px;
+    }
+
+    &__content{
+        background-color: v.$primaryColor;
+    }
+
+    &__title{
+        color: v.$white;
+        text-align: center;
+        &--steps{
+            display: block;
+            font-size: 2rem;
+        }
+    }
+
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @include m.tablet {
+            flex-direction: row;
+        }
+    }
+
+    &__item{
+        transition-property: transform, rotate;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+        
+        &:hover{
+            transform: scale(1.1);
+            rotate: -3deg;
+        }
+    }
+}
