@@ -133,6 +133,8 @@
 
     &__autor{
         color: v.$white;
+        margin: 0 auto;
+        font-weight: 700;
     }
 
     &__contenido{
@@ -166,7 +168,7 @@
             &:first-child{
                 grid-column: 1/4;
             }
-            
+
             &:nth-child(2){
                 grid-column: 4/5;
             }
