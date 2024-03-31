@@ -340,3 +340,67 @@
     }
 
 }
+
+.footer{
+    background-color: v.$secondaryColor;
+    padding: 5rem 0 0 0;
+
+    &__grid{
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+    }
+
+    &__section{
+        margin-bottom: 5rem;
+    }
+
+    &__title{
+        color: v.$white;
+        text-align: center;
+        margin: 0;
+
+        @include m.tablet {
+            text-align: start;
+        }
+    }
+
+    &__text{
+        color: v.$white;
+        line-height: 1.8;
+        font-size: 2rem;
+        text-align: center;
+
+        @include m.tablet {
+            text-align: start;
+        }
+    }
+
+    &__navbar{
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include m.tablet {
+            align-items: flex-start;
+        }
+
+        &__link{
+            color: v.$white;
+            line-height: 1.8;
+            font-size: 2rem;
+            text-align: start;
+        }
+    }
+
+    &__copy{
+        margin: 0;
+        text-align: center;
+        color: v.$white;
+        background-color: v.$primaryColor;
+        padding: 2rem 0;
+    }
+}
