@@ -254,3 +254,35 @@
         }
     }
 }
+
+.earnings{
+    padding: 5rem 0;
+
+    &__title{
+        color: v.$secondaryColor;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    &__text{
+        line-height: 1.5;
+        color: v.$secondaryColor;
+    }
+
+    &__btn{
+        @include m.btn(v.$primaryColor, v.$white);
+    }
+
+    &__grid{
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: v.$distance;
+        }
+    }
+}
