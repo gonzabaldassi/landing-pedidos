@@ -286,3 +286,57 @@
         }
     }
 }
+
+
+.downloads{
+    padding: 5rem 0;
+    background-color: v.$lightGrey;
+
+    &__img{
+        width: 50%;
+        margin: 5rem auto 0 auto;
+        transition-property: transform, rotate;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+
+        &:hover{
+            transform: scale(1.2);
+            rotate: 3deg;
+        }
+    }
+    
+    &__grid{
+        display: flex;
+        flex-direction: column-reverse;
+
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+    }
+
+    &__stores{
+        &__title{
+            color: v.$secondaryColor;
+            margin: 2rem 0 0 0;
+        }
+
+        &__grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        &__link{
+            transition-property: transform;
+            transition-duration: .4s;
+            transition-timing-function: ease;
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+
+}
